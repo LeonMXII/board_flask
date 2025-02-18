@@ -1,0 +1,10 @@
+services:
+
+  db:
+    image: postgres:14.3-alpine3.15
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: ${USER}
+      POSTGRES_PASSWORD: ${PASSWORD}
+      POSTGRES_DB: ${DB}
